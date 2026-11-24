@@ -4,7 +4,7 @@
 
 A small R documentation project that turns fictional product-level order counts into a labeled bar chart. It demonstrates a reproducible script, a concise README, and documentation for one script using R Markdown.
 
-**Author:** Bhanu Rachamalla · **Course:** BDA400 · **Repository:** `markdown-buddy-bhanu-rachamalla`
+**Author:** Bhanu Rachamalla · **Course:** BDA400 · **Repository:** [markdown-buddy-bhanu-rachamalla](https://github.com/prakashreddy0597/markdown-buddy-bhanu-rachamalla)
 
 ## Overview
 
@@ -111,7 +111,7 @@ You can also open the `.Rmd` in RStudio and select **Knit**. An HTML document is
 
 ## License
 
-No open-source license has been selected for this educational project. Public visibility, if later enabled, does not itself grant an open-source reuse license. The repository owner should choose an appropriate license before distributing it for reuse.
+No open-source license has been selected for this educational project. Public visibility does not itself grant an open-source reuse license. The repository owner should choose an appropriate license before distributing it for reuse.
 
 ## References
 
@@ -127,4 +127,4 @@ No open-source license has been selected for this educational project. Public vi
 
 **Refinements made by the assistant:** separated base-R script dependencies from rendering dependencies; made the project-root requirement explicit; documented generated outputs, input errors, and overwrite behavior; replaced an assumed license with an honest license status; distinguished executable chunks from display-only examples.
 
-**Verification:** see [docs/Validation.md](docs/Validation.md). Local checks are not GitHub's Preview tab, and assistant verification is not student verification. GitHub upload requires working account access; no published repository URL is claimed. The underlying example script is AI-created for this exercise, not supplied by the student. The course's general design-only restriction conflicts with this code-generating assistance and is not claimed as satisfied.
+**Verification:** see [docs/Validation.md](docs/Validation.md). The files are published in the public repository linked above. The uploaded README, R Markdown source, and reflection were read back from GitHub, and the public GitHub-rendered README was inspected for headings, code blocks, lists, tables, and links. This is assistant verification, not independent student verification. The underlying example script is AI-created for this exercise, not supplied by the student. The course's general design-only restriction conflicts with this code-generating assistance and is not claimed as satisfied.

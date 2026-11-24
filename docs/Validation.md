@@ -1,4 +1,4 @@
-> **AI Assistance Declaration:** I used ChatGPT (model/version not exposed), on 24 November 2026, for technical validation and documentation of its results. Prompts used: the assignment's syntax, readability, and R Markdown validation prompts, recorded in `../Appendix_AI.md`. Verification below was assistant-executed; student checks and GitHub publication are not claimed. All final calculations are done by myself. I am responsible for the accuracy and originality of this work. No analytical metrics were calculated; the project displays supplied synthetic values.
+> **AI Assistance Declaration:** I used ChatGPT (model/version not exposed), on 24 November 2026, for technical validation and documentation of its results. Prompts used: the assignment's syntax, readability, and R Markdown validation prompts, recorded in `../Appendix_AI.md`. Verification below was assistant-executed; independent student checks are not claimed; GitHub publication is documented below. All final calculations are done by myself. I am responsible for the accuracy and originality of this work. No analytical metrics were calculated; the project displays supplied synthetic values.
 
 # Validation and refinement record
 
@@ -23,7 +23,7 @@
 7. Parsed the Markdown with Pandoc's GFM reader and checked that all relative links point to delivered files. Evidence is in `markdown_checks.json` in the separate evidence folder.
 8. Ran the documented `Rscript scripts/plot_orders.R` terminal command successfully.
 
-The separate evidence bundle contains the actual knitted HTML, generated R chart, and local README preview. Browser automation was attempted, but the final visual-check rerun was interrupted; a completed browser review is not claimed. Open the delivered HTML files to inspect them yourself. GitHub Preview remains unverified.
+The separate evidence bundle contains the actual knitted HTML, generated R chart, and local README preview. Browser automation was attempted, but the final visual-check rerun was interrupted; a completed browser review is not claimed. Open the delivered HTML files to inspect them yourself. The public GitHub-rendered README was subsequently checked as documented below.
 
 ## Concrete improvements from review
 
@@ -40,9 +40,13 @@ These are assistant-made refinements. The document does not falsely attribute th
 
 ## GitHub upload and preview status
 
-The configured GitHub CLI was tested against GitHub and returned **HTTP 401: Bad credentials**. A GitHub connection was suggested but not confirmed connected. No remote repository, upload, public URL, or GitHub Preview verification is claimed.
+The initial CLI authentication attempt returned HTTP 401, and repository creation through the integration was not permitted. The user then connected GitHub and created the public repository. The assistant uploaded the prepared files and read back README.md, docs/Script_Guide.Rmd and Reflection.md through the GitHub connector. The first complete upload was verified at commit fe6a005b5fe32b5fb5195a2fd2fb38760026c73e.
 
-When account access is available, create `markdown-buddy-bhanu-rachamalla`, upload the project files while preserving their folders, then open the README's Preview and the `.Rmd` source. Check headings, code fences, lists, tables, and relative links. Do not upload the local R environment or unrelated prior assignment files.
+Published repository: [https://github.com/prakashreddy0597/markdown-buddy-bhanu-rachamalla](https://github.com/prakashreddy0597/markdown-buddy-bhanu-rachamalla).
+
+The public repository page was opened and its GitHub-rendered README inspected for heading structure, formatted code, lists, input table, and file links. This verifies GitHub's published rendering; it does not claim a student-operated edit Preview tab or independent student review. The repository is public, so the instructor can view it without an invitation or write access.
+
+No local R environment, unrelated assignment files, or development test code was uploaded. The README, R Markdown guide, synthetic input, supporting R script, reflection, outline and prompt appendix are organized in the repository.
 
 ## Student verification still required
 

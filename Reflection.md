@@ -10,7 +10,7 @@ I would use AI to propose a structure and turn a short project description into 
 
 ## 2. What needed refinement, and how should I validate it?
 
-The documented refinements make the working directory explicit, distinguish base-R plotting requirements from rendering packages, and explain which code chunks execute. The guide avoids recursively rendering itself and states that an existing chart can be overwritten. These details matter because plausible instructions can still fail when paths or chunk behavior are unclear. I would compare the README against the delivered script, inspect the local preview, and complete GitHub Preview after upload. The technical validation record reports only assistant-run checks; it does not certify my own review or a completed GitHub upload.
+The documented refinements make the working directory explicit, distinguish base-R plotting requirements from rendering packages, and explain which code chunks execute. The guide avoids recursively rendering itself and states that an existing chart can be overwritten. These details matter because plausible instructions can still fail when paths or chunk behavior are unclear. I would compare the README against the delivered script and inspect its preview before adopting it. The assistant has uploaded the files and checked the public GitHub-rendered README; those checks are documented in the validation record. They do not certify that I personally reviewed the files.
 
 ## 3. What ethical responsibilities remain when AI assists my documentation?
 

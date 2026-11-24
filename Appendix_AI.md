@@ -1,4 +1,4 @@
-> **AI Assistance Declaration:** I used ChatGPT (model/version not exposed), on 24 November 2026, for documentation structure, README and R Markdown drafting, illustrative example code, and writing assistance. Prompts used: the supplied Markdown Buddy brief and the exact supplied activity prompts reproduced below. I verified outputs using assistant-run local checks documented in `docs/Validation.md`; no independent student checks or GitHub publication are claimed. All final calculations are done by myself. I am responsible for the accuracy and originality of this work. This documentation project calculates no analytical metrics.
+> **AI Assistance Declaration:** I used ChatGPT (model/version not exposed), on 24 November 2026, for documentation structure, README and R Markdown drafting, illustrative example code, and writing assistance. Prompts used: the supplied Markdown Buddy brief and the exact supplied activity prompts reproduced below. I verified outputs using assistant-run local checks documented in `docs/Validation.md`; no independent student checks are claimed; GitHub publication is verified in the validation record. All final calculations are done by myself. I am responsible for the accuracy and originality of this work. This documentation project calculates no analytical metrics.
 
 # Appendix: AI prompts, key responses, and refinement record
 
@@ -62,6 +62,11 @@
 
 ## Verification and ethical limits
 
-The assistant compared source structure with the actual tidyverse/ggplot2 README and inspected official GitHub and R Markdown documentation. Rendering and any browser checks are assistant-executed, not student checks. Read `docs/Validation.md` for actual results and remaining steps. GitHub authentication failed, so this package must not be described as already published or verified in GitHub Preview.
+The assistant compared source structure with the actual tidyverse/ggplot2 README and inspected official GitHub and R Markdown documentation. Rendering and any browser checks are assistant-executed, not student checks. Read `docs/Validation.md` for actual results and remaining steps. Earlier GitHub authentication failed. After the user connected GitHub and created the public repository, the assistant uploaded the files and verified the public rendered README. The published URL is https://github.com/prakashreddy0597/markdown-buddy-bhanu-rachamalla. This is not a claim of student review or use of a signed-in edit-preview screen.
 
 The course's general instruction that AI act only as a design assistant conflicts with the generation of the illustrative supporting script and first-person reflection. This use is disclosed, not claimed compliant. The three exact reflection questions were omitted from the supplied brief; `Reflection.md` identifies its questions as provisional. No student review, peer approval, spreadsheet verification, or published URL has been fabricated.
+
+
+## Publication follow-up
+
+Actual follow-up requests included “Create one GitHub repo for me and have it same as asked in assignment” and the user-provided repository URL with “chose public”. The user created the repository because the integration could not create it. The assistant then uploaded the prepared files using the connected GitHub plugin, verified uploaded content, and inspected the public rendered README. No collaborator invitation was needed for viewing the public repository.
