@@ -1,0 +1,112 @@
+---
+title: "Cedar Café Orders: Script Guide"
+author: "Bhanu Rachamalla"
+date: "2026-11-24"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    self_contained: true
+    mathjax: null
+    highlight: tango
+ai_assistance_declaration: "ChatGPT drafted the documentation and example code; see the visible declaration below and Appendix_AI.md. No student verification is claimed."
+---
+
+> **AI Assistance Declaration:** I used ChatGPT (model/version not exposed), on 24 November 2026, for this R Markdown document, code examples, and an illustrative R script. Prompts used: the supplied Markdown Buddy brief's script-documentation seed, refinement, and validation prompts, detailed in `Appendix_AI.md`. I verified outputs using assistant-executed R Markdown rendering and local inspection; independent student verification is not claimed. All final calculations are done by myself. I am responsible for the accuracy and originality of this work. No analysis metrics are computed: the plot displays supplied synthetic counts. All text and example code are AI-generated.
+
+```{r setup, include=FALSE}
+# Support both project-root rendering and RStudio's document-folder working directory.
+project_root <- if (file.exists("scripts/plot_orders.R")) {
+  normalizePath(".")
+} else {
+  normalizePath("..")
+}
+knitr::opts_knit$set(root.dir = project_root)
+knitr::opts_chunk$set(echo = TRUE, message = TRUE, warning = TRUE)
+```
+
+# Purpose
+
+Document one script, `scripts/plot_orders.R`. It reads a small synthetic CSV, checks its structure, and writes a labeled product-order chart. The example supports documentation practice; it does not estimate real demand or calculate totals, averages, or forecasts.
+
+## Inputs
+
+| Input | Meaning |
+| --- | --- |
+| `data/synthetic_orders.csv` | Invented product names and order counts |
+| `product` | Non-empty, unique beverage name |
+| `orders` | Finite, non-negative whole-number input |
+| `input_file` argument | Optional alternate CSV path |
+
+The CSV starts with a comment containing its AI declaration. The reader uses `comment.char = "#"` so that this line is not treated as data. No real customer data are present.
+
+## Outputs
+
+- `outputs/orders_by_product.png`: descriptive bar chart, overwritten if it already exists.
+- An invisible return value containing the imported table, useful for inspection.
+- A clear error if the input file or schema is invalid. The script does not create a success chart after an input-validation error.
+
+# Script walkthrough
+
+1. Verify that the input path exists.
+2. Read the CSV while ignoring declaration comments.
+3. Check exact column names, non-empty unique product names, and valid counts.
+4. Create the output directory if needed.
+5. Open a PNG graphics device and register its closure with `on.exit()`.
+6. Plot the supplied values with a title and labeled axes; return the imported table.
+
+## Run the script
+
+The following chunk executes the documented function. It imports and plots the existing synthetic inputs without calculating analytical performance measures.
+
+```{r run-script}
+source("scripts/plot_orders.R")
+orders <- plot_orders()
+knitr::kable(orders, caption = "Synthetic input values; not observed cafe results")
+```
+
+## View the generated chart
+
+```{r show-chart, echo=FALSE, out.width="90%", fig.cap="Bar chart of supplied synthetic order counts; no real cafe data."}
+knitr::include_graphics(
+  normalizePath("outputs/orders_by_product.png"),
+  rel_path = FALSE
+)
+```
+
+## Alternate destination example
+
+This is an R example with syntax highlighting. It is deliberately not executed during knitting so that the guide does not generate a second output file.
+
+```{r alternate-destination, eval=FALSE}
+plot_orders(output_file = "outputs/custom_orders.png")
+```
+
+# Rendering and reproducibility
+
+Open this file in RStudio and select **Knit**, or run the following from the project root. This example is display-only to prevent a recursive render.
+
+```{r render-example, eval=FALSE}
+rmarkdown::render(
+  "docs/Script_Guide.Rmd",
+  output_file = "Script_Guide.html",
+  output_dir = "docs",
+  knit_root_dir = getwd()
+)
+```
+
+The plotting script uses base R. Rendering also needs `rmarkdown`, `knitr`, and Pandoc. The setup chunk supports project-root execution and RStudio's usual document-directory starting point. Check `docs/Validation.md` for the actual validation record.
+
+## Environment information
+
+The following chunk records versions from the real rendering session rather than inventing a tested environment.
+
+```{r session-details}
+sessionInfo()
+```
+
+# Limitations and ethical use
+
+The category values were invented for this exercise. The chart should not support commercial decisions, customer profiling, or claims about actual popularity. Documentation is trustworthy only when paths, dependencies, code behavior, and validation claims agree with the delivered files.
+
+This guide and its sample script were generated with AI. Student review and any required manual validation must be completed and disclosed separately. No analytical calculations require a Sheets workbook in this project; if calculations are added later, apply the required primary calculation, independent cross-check, and peer/self spot-check pattern.

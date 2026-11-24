@@ -1,0 +1,9 @@
+# AI-assisted repository housekeeping; see README.md for the full declaration.
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.DS_Store
+outputs/
+docs/*.html
+docs/Script_Guide_files/
